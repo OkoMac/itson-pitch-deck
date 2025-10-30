@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itson Suite - Smarter Shifts. Safer Teams. Happier People.</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="background-animation"></div>
+    <div class="network-bg"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">itson</div>
+            <ul class="nav-links">
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#partnership">Partnership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="watch-container">
+                <div class="watch-frame">
+                    <div class="watch-screen">
+                        <div class="network-animation">
+                            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                        <feMerge>
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <g stroke="#0066ff" stroke-width="0.5" fill="none" filter="url(#glow)" opacity="0.6">
+                                    <circle cx="200" cy="200" r="80" stroke-dasharray="5,5" opacity="0.3">
+                                        <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="20s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="200" cy="200" r="120" stroke-dasharray="10,5" opacity="0.4">
+                                        <animateTransform attributeName="transform" type="rotate" from="360 200 200" to="0 200 200" dur="25s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="200" cy="200" r="160" stroke-dasharray="15,5" opacity="0.5">
+                                        <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="30s" repeatCount="indefinite"/>
+                                    </circle>
+                                    
+                                    <!-- Network nodes -->
+                                    <circle cx="200" cy="120" r="4" fill="#00a3ff">
+                                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="280" cy="200" r="4" fill="#00a3ff">
+                                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="200" cy="280" r="4" fill="#00a3ff">
+                                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="1s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="120" cy="200" r="4" fill="#00a3ff">
+                                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+                                    </circle>
+                                    
+                                    <!-- Connecting lines -->
+                                    <path d="M200,120 L280,200 L200,280 L120,200 Z" stroke-dasharray="5,10">
+                                        <animate attributeName="stroke-dashoffset" from="0" to="15" dur="1s" repeatCount="indefinite"/>
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="logo-text">itson</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tagline">
+                <span>Smarter Shifts.</span> Safer Teams. <span>Happier People.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section id="challenge">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2>The Challenge</h2>
+            <p class="section-subtitle">Workforces are getting smarter — but the systems that manage them aren't.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3 class="feature-title">Manual Processes</h3>
+                <p class="feature-description">Most field operations still rely on manual check-ins and delayed reporting.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Reactive Management</h3>
+                <p class="feature-description">Problems are discovered after they happen, not prevented before.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚠️</div>
+                <h3 class="feature-title">SLA Breaches</h3>
+                <p class="feature-description">In SLA-bound industries, lateness isn't an inconvenience — it's a contract breach.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2>The Vision</h2>
+            <p class="section-subtitle">Upgrade the way work works.</p>
+        </div>
+        <p style="text-align: center; font-size: 1.25rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
+            A single ecosystem connecting every worker, device, and schedule — live, predictive, and human-centred. 
+            Accessible from smartwatches, mobiles, and any connected device.
+        </p>
+    </section>
+
+    <!-- Demo Video Section -->
+    <section id="demo">
+        <div class="demo-container">
+            <div class="demo-header">
+                <div class="demo-title">See Itson in Action</div>
+                <p style="color: var(--text-secondary);">Live positioning, real-time insights, predictive intelligence</p>
+            </div>
+            
+            <!-- Video Container with Multiple Fallbacks -->
+            <div class="video-wrapper">
+                <video id="demoVideo" controls preload="auto" width="100%" height="auto">
+                    <!-- Try different path formats -->
+                    <source src="Picture_9.mp4" type="video/mp4">
+                    <source src="./Picture_9.mp4" type="video/mp4">
+                    <source src="/mnt/user-data/outputs/Picture_9.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Video Control Buttons -->
+            <div class="video-controls">
+                <button class="video-btn primary" onclick="playVideo()">
+                    ▶ Play Demo
+                </button>
+                <button class="video-btn secondary" onclick="pauseVideo()">
+                    ⏸ Pause
+                </button>
+                <button class="video-btn secondary" onclick="restartVideo()">
+                    ↺ Restart
+                </button>
+                <a href="Picture_9.mp4" download class="video-btn secondary" style="text-decoration: none;">
+                    📥 Download Video
+                </a>
+            </div>
+
+            <!-- Fallback Message -->
+            <div id="videoFallback" style="display: none;">
+                <div class="video-fallback">
+                    <h3>Demo Video</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        If the video doesn't play automatically, please use the download button below to view it locally.
+                    </p>
+                    <a href="Picture_9.mp4" download class="video-btn primary" style="text-decoration: none;">
+                        📥 Download Demo Video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Experience Section -->
+    <section id="features">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2>The Core Experience</h2>
+            <p class="section-subtitle">Real-time · Gamified · AI-Driven</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Smart Engagement</h3>
+                <p class="feature-description">Notifications, reminders, and achievements delivered directly to wearables — keeping teams connected without extra apps.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔮</div>
+                <h3 class="feature-title">Pre-Check-In Intelligence</h3>
+                <p class="feature-description">Predicts lateness, shift gaps, or absentee risk before they happen.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3 class="feature-title">AI Workforce Planning</h3>
+                <p class="feature-description">Automated scheduling that balances compliance, fatigue, and operational demand.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3 class="feature-title">Gamified Performance</h3>
+                <p class="feature-description">Reward points, badges, and leaderboards that drive retention and morale.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">Cross-Device Reach</h3>
+                <p class="feature-description">Works on watches, phones, tablets, and upcoming IoT hardware — no friction.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✅</div>
+                <h3 class="feature-title">Compliance-Ready</h3>
+                <p class="feature-description">Real-time evidence for regulated industries with full audit trails.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Differentiators -->
+    <section id="differentiators">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2>Key Differentiators</h2>
+            <p class="section-subtitle">What makes Itson unique</p>
+        </div>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">Edge</div>
+                <div class="stat-label">Behavioural Data at the Source</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Zero</div>
+                <div class="stat-label">Friction Adoption - Instant Deployment</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Human</div>
+                <div class="stat-label">Centred Design with Immediate Feedback</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">AI+</div>
+                <div class="stat-label">Upgradeable AI - Smarter Every Shift</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2>Industry Highlights</h2>
+            <p class="section-subtitle">Transforming workforce management across sectors</p>
+        </div>
+        <div class="industry-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vertical</th>
+                        <th>Core Capabilities</th>
+                        <th>Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Security</strong></td>
+                        <td>Guard readiness checks, geo-verified patrols, fatigue scoring</td>
+                        <td class="outcome">↓ 30% labour, full SLA traceability</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Healthcare / Nursing</strong></td>
+                        <td>Pre-shift validation, vitals prompts, handover timing</td>
+                        <td class="outcome">100% shift coverage, fewer overtime penalties</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Retail & Merchandising</strong></td>
+                        <td>Route optimisation, gamified targets</td>
+                        <td class="outcome">↑ 25% task completion, ↓ 40% cycle time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cleaning & Facilities</strong></td>
+                        <td>Room-level tracking, auto task verification</td>
+                        <td class="outcome">50% faster reporting, zero paperwork</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mining & Industrial</strong></td>
+                        <td>Vitals & equipment pre-check, zone alerts</td>
+                        <td class="outcome">↓ 60% incidents, improved compliance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- People Section -->
+    <section id="people">
+        <div class="section-header">
+            <span class="section-number">06</span>
+            <h2>For the People Who Make It Work</h2>
+            <p class="section-subtitle">Empowering teams through proactive care and real rewards</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">💚</div>
+                <h3 class="feature-title">Proactive Wellbeing</h3>
+                <p class="feature-description">
+                    Pulse, fatigue, stress indicators built into daily routines.<br>
+                    Smartwatch wellness nudges: hydrate · rest · breathe.<br>
+                    Early burnout alerts — data for support, not surveillance.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Energy into Engagement</h3>
+                <p class="feature-description">
+                    Each shift and milestone fuels a personal performance score.<br>
+                    Micro-rewards turn consistency into motivation.<br>
+                    Workers see their impact and feel recognised.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connected Devices Section -->
+    <section id="devices">
+        <div class="section-header">
+            <span class="section-number">07</span>
+            <h2>Connected by Design</h2>
+            <p class="section-subtitle">Every worker. Every device. One connected reality.</p>
+        </div>
+        <div class="devices-showcase">
+            <div class="device-item">
+                <div class="device-icon">⌚</div>
+                <div class="device-name">Smartwatch</div>
+                <div class="device-description">Attendance, health, engagement for front-line workers</div>
+            </div>
+            <div class="device-item">
+                <div class="device-icon">💬</div>
+                <div class="device-name">WhatsApp App</div>
+                <div class="device-description">Quick actions, universal access for field teams</div>
+            </div>
+            <div class="device-item">
+                <div class="device-icon">📱</div>
+                <div class="device-name">Mobile App</div>
+                <div class="device-description">Analytics, AI scheduling for supervisors</div>
+            </div>
+            <div class="device-item">
+                <div class="device-icon">💻</div>
+                <div class="device-name">Web Portal</div>
+                <div class="device-description">Management, compliance for executives</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Add-ons -->
+    <section id="addons">
+        <div class="section-header">
+            <span class="section-number">08</span>
+            <h2>Feature Add-Ons</h2>
+            <p class="section-subtitle">Upgrade your capabilities with modular enhancements</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✅</div>
+                <h3 class="feature-title">Smart Attendance+</h3>
+                <p class="feature-description">Readiness + biometric validation with real-time SLA proof</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3 class="feature-title">AI Scheduling & Rostering</h3>
+                <p class="feature-description">Auto-rosters with fatigue logic, predicts gaps & sends smart alerts</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3 class="feature-title">TaskFlow</h3>
+                <p class="feature-description">Shift → task conversion with paperless proof of completion</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎮</div>
+                <h3 class="feature-title">Engage360</h3>
+                <p class="feature-description">Challenges + milestones + points to boost morale & retention</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏥</div>
+                <h3 class="feature-title">Wellness+</h3>
+                <p class="feature-description">Monitors stress & safety to support healthier teams</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏅</div>
+                <h3 class="feature-title">Rewards & Recognition</h3>
+                <p class="feature-description">Minted digital cards for achievements - portable, verifiable credentials</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partnership">
+        <div class="section-header">
+            <span class="section-number">09</span>
+            <h2>The Partnership Model</h2>
+            <p class="section-subtitle">Jem runs payroll. Itson drives performance.</p>
+        </div>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">200K+</div>
+                <div class="stat-label">Instant Access to Jem Users</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Free</div>
+                <div class="stat-label">Time & Attendance for Jem Customers - *Subject to once of minting fee*</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Daily</div>
+                <div class="stat-label">Engagement Touchpoints = Higher Retention</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">New</div>
+                <div class="stat-label">Revenue via Wearables & AI Modules</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Simon, let's modernise Africa's workforce — together.</h2>
+            <p class="cta-subtitle">You've built the trust layer of HR. Let's add the intelligence layer that brings it to life.</p>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">Itson Suite — Integrated. Predictive. Human.</p>
+            <a href="#contact" class="cta-button">Book a Partner Session →</a>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
