@@ -2,8 +2,9 @@
 function playVideo() {
     const video = document.getElementById('demoVideo');
     if (video) {
+        video.playbackRate = 2.0; // Set to 2x speed
         video.play().then(() => {
-            console.log('Video playing');
+            console.log('Video playing at 2x speed');
         }).catch(err => {
             console.error('Play error:', err);
             showFallback();
@@ -40,10 +41,14 @@ window.addEventListener('DOMContentLoaded', function() {
     const video = document.getElementById('demoVideo');
 
     if (video) {
+        // Set default playback speed to 2x
+        video.playbackRate = 2.0;
+
         // Add event listeners
         video.addEventListener('loadedmetadata', function() {
             console.log('Video loaded successfully');
             console.log('Duration:', video.duration, 'seconds');
+            video.playbackRate = 2.0; // Ensure 2x speed after metadata loads
         });
 
         video.addEventListener('error', function(e) {
